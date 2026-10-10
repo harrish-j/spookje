@@ -1,0 +1,58 @@
+:root {
+  --sky-top: #7cc6f3;
+  --sky-bottom: #d7f2ff;
+  --panel: #fff8e8;
+  --ink: #2f3c55;
+  --accent: #ffb347;
+  --accent-2: #5ec5a5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Baloo 2", cursive;
+  color: var(--ink);
+  background: radial-gradient(circle at 20% 20%, #ffffff 0%, #e9f8ff 35%, #ccecff 100%);
+}
+
+.page {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 1rem 1rem 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0.4rem 0 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 0.03em;
+}
+
+p {
+  margin: 0.2rem auto;
+  max-width: 720px;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+}
+
+#game-wrap {
+  margin: 0.7rem auto;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  box-shadow: 0 10px 30px rgba(26, 86, 122, 0.2);
+  background: linear-gradient(180deg, var(--sky-top), var(--sky-bottom));
+  touch-action: none;
+}
+
+canvas {
+  display: block;
+}
+
+.hint {
+  margin-top: 0.25rem;
+  color: #3b5678;
+}
